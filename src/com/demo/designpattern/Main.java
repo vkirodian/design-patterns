@@ -14,7 +14,13 @@ import com.demo.designpattern.structural.facade.FacadeCaller;
 import com.demo.designpattern.structural.flyweight.FlyweightCaller;
 import com.demo.designpattern.structural.proxy.ProxyCaller;
 
-//Main caller
+/**
+ * Main class of the design patterns demo project.
+ *
+ * This class serves as the entry point for demonstrating various design patterns implemented in the project.
+ * It contains a main method that calls static methods from different caller classes, each representing
+ * a specific design pattern category (creational, structural, behavioral).
+ */
 public class Main {
 
 	public static void main(String[] args) {
