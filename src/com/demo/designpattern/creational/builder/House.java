@@ -1,6 +1,10 @@
 package com.demo.designpattern.creational.builder;
 
-//Actual complex object that needs to be created, but we want to hide this complexity.
+/**
+ * Represents a house with detailed attributes such as floor, walls, roof, doors, and windows.
+ * This class encapsulates the complexity of a house object, providing a constructor to initialize
+ * the house with specific attributes, and a toString method for representing the house's details as a string.
+ */
 public class House {
 
 	private String floor;
@@ -9,43 +13,11 @@ public class House {
 	private String doors;
 	private String windows;
 
-	public String getFloor() {
-		return floor;
-	}
-
-	public void setFloor(String floor) {
+	public House(String floor, String walls, String roof, String doors, String windows) {
 		this.floor = floor;
-	}
-
-	public String getWalls() {
-		return walls;
-	}
-
-	public void setWalls(String walls) {
 		this.walls = walls;
-	}
-
-	public String getRoof() {
-		return roof;
-	}
-
-	public void setRoof(String roof) {
 		this.roof = roof;
-	}
-
-	public String getDoors() {
-		return doors;
-	}
-
-	public void setDoors(String doors) {
 		this.doors = doors;
-	}
-
-	public String getWindows() {
-		return windows;
-	}
-
-	public void setWindows(String windows) {
 		this.windows = windows;
 	}
 
