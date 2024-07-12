@@ -1,15 +1,28 @@
 package com.demo.designpattern.creational.singleton;
 
+/**
+ * Implements the Singleton Design Pattern to ensure that only one instance of the Singleton class is created.
+ * This class provides a global point of access to the instance through the {@code getInstance()} method.
+ */
 public class Singleton {
 
-	// private static un-initialized instance of then class
+	/**
+	 * The single instance of the Singleton class, initially null and lazily initialized.
+	 */
 	private static Singleton instance;
 
-	// private constructor denying creation of object using new operator
+	/**
+	 * Private constructor to prevent instantiation from outside the class.
+	 */
 	private Singleton() {
 	}
 
-	// static method returning the same instance of the class whenever asked for
+	/**
+	 * Provides a global point of access to the Singleton instance.
+	 * This method is synchronized to prevent multiple threads from creating multiple instances in a multithreaded environment.
+	 *
+	 * @return The single instance of the Singleton class.
+	 */
 	public static synchronized Singleton getInstance() {
 		if (instance == null) {
 			instance = new Singleton();
