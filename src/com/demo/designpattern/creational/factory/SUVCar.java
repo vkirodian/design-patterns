@@ -6,12 +6,11 @@ public class SUVCar extends Car {
 
 	public SUVCar() {
 		super(CarType.SUV);
-		constructCar();
 	}
 
 	@Override
-	public void constructCar() {
-		System.out.println("Constructed SUV Car");
+	public void driveCar() {
+		System.out.println("Driving SUV");
 	}
 
 }

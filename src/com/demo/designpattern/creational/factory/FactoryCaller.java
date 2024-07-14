@@ -11,8 +11,8 @@ public class FactoryCaller {
 
 	public static void call() {
 		System.out.println("***Factory***");
-		System.out.println(CarFactory.constructCar(CarType.Hatchback));
-		System.out.println(CarFactory.constructCar(CarType.Sedan));
-		System.out.println(CarFactory.constructCar(CarType.Hatchback));
+		CarFactory.constructCar(CarType.Hatchback).driveCar();
+		CarFactory.constructCar(CarType.Sedan).driveCar();
+		CarFactory.constructCar(CarType.Hatchback).driveCar();
 	}
 }

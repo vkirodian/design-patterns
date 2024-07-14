@@ -6,12 +6,11 @@ public class HatchbackCar extends Car {
 
 	public HatchbackCar() {
 		super(CarType.Hatchback);
-		constructCar();
 	}
 
 	@Override
-	public void constructCar() {
-		System.out.println("Constructed Hatchback Car");
+	public void driveCar() {
+		System.out.println("Driving Hatchback");
 	}
 
 }

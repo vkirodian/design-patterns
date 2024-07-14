@@ -4,6 +4,7 @@ import com.demo.designpattern.behavioral.chainofresponsibility.ChainOfResponsibi
 import com.demo.designpattern.creational.abstractfactory.AbstractFactoryCaller;
 import com.demo.designpattern.creational.builder.BuilderCaller;
 import com.demo.designpattern.creational.factory.FactoryCaller;
+import com.demo.designpattern.creational.factory.factorymethod.FactoryMethodCaller;
 import com.demo.designpattern.creational.prototype.PrototypeCaller;
 import com.demo.designpattern.creational.singleton.SingletonCaller;
 import com.demo.designpattern.structural.adapter.AdapterCaller;
@@ -27,6 +28,7 @@ public class Main {
 		SingletonCaller.call();
 		BuilderCaller.call();
 		FactoryCaller.call();
+		FactoryMethodCaller.call();
 		AbstractFactoryCaller.call();
 		PrototypeCaller.call();
 		

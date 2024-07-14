@@ -8,21 +8,13 @@ package com.demo.designpattern.creational.factory;
  */
 public abstract class Car {
 
-	private CarType carType;
+	private final CarType carType;
 
 	public Car(CarType carType) {
 		this.carType = carType;
 	}
 
-	public CarType getCarType() {
-		return carType;
-	}
-
-	public void setCarType(CarType carType) {
-		this.carType = carType;
-	}
-
-	public abstract void constructCar();
+	public abstract void driveCar();
 
 	@Override
 	public String toString() {
