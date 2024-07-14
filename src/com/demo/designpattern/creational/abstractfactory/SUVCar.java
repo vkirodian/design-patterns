@@ -1,17 +1,9 @@
 package com.demo.designpattern.creational.abstractfactory;
 
-//Concrete implementation
-//Car type is defined by the class itself but the location is configurable
-public class SUVCar extends Car {
-
-	public SUVCar(Location location) {
-		super(CarType.SUV, location);
-		constructCar(location);
-	}
+public class SUVCar implements Car {
 
 	@Override
-	public void constructCar(Location location) {
-		System.out.println("Constructed SUV Car at " + location);
+	public void makeCar() {
+		System.out.println("SUV manufactured.");
 	}
-
 }
